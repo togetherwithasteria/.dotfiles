@@ -261,3 +261,7 @@ mode "$mode_system" {
 bindsym $mod+S+Delete mode "$mode_system"
 
 }
+
+
+# If you don't have KDE installed, you can use the agent of the DE you have installed in your machine.
+exec /usr/lib/polkit-kde-authentication-agent-1
