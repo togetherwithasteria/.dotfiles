@@ -9,11 +9,13 @@ call plug#begin(stdpath('data') . '/plugged')
 	Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 	Plug 'mhinz/vim-startify' 
 	Plug 'ryanoasis/vim-devicons'
+	Plug 'vimlab/split-term.vim'
 
 source coc.nvim.vim
 
 set guifont=DroidSansMono\ Nerd\ Font\ 11
 
+nnoremap <C-S-`> :Term<CR>
 " Read ~/.NERDTreeBookmarks file and takes its second column
 function! s:nerdtreeBookmarks()
     let bookmarks = systemlist("cut -d' ' -f 2- ~/.NERDTreeBookmarks")
