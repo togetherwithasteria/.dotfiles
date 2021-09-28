@@ -11,7 +11,7 @@ call plug#begin(stdpath('data') . '/plugged')
 	Plug 'ryanoasis/vim-devicons'
 	Plug 'vimlab/split-term.vim'
 
-source coc.nvim.vim
+source ~/.config/nvim/coc.nvim.vim
 
 set guifont=DroidSansMono\ Nerd\ Font\ 11
 
