@@ -20,3 +20,8 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 PS1="\[\033[01;32m\]\u@\[\033[01;34m\]\w\[\033[01;35m\]$\[\033[01;34m\]"
 
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+if [[ $(ps --no-header --pid=$PPID --format=cmd) != "fish" && -z ${BASH_EXECUTION_STRING} ]]
+then
+	exec fish
+fi
