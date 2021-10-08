@@ -39,7 +39,7 @@ exec clipman restore
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/Wallpapers/noellemonade-wl.jpg fill
+output * bg ~/Wallpapers/alex-dukhanov-frosty-morning.jpg fill
 #
 # Example configuration:
 #
@@ -265,3 +265,13 @@ bindsym $mod+S+Delete mode "$mode_system"
 
 # If you don't have KDE installed, you can use the agent of the DE you have installed in your machine.
 exec /usr/lib/polkit-kde-authentication-agent-1
+
+# Lock screen
+#
+# Source: https://man.archlinux.org/man/swayidle.1#EXAMPLE
+#
+exec swayidle -w \
+	timeout 300 'swaylock -f -c 000000' \
+	timeout 600 'swaymsg "output * dpms off"' \
+		resume 'swaymsg "output * dpms on"' \
+	before-sleep 'swaylock -f -c 000000'
