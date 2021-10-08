@@ -1,0 +1,54 @@
+/*
+You can type here any CSS rule recognized by
+ GTK+.
+You can temporarily disable this custom CSS by clicking on the “Pause” button above.
+
+Changes are applied instantly and globally, for the whole application.
+*/
+
+* {
+	font-family: monospace;
+}
+
+window#waybar {
+	border-radius: 5px;
+}
+
+.modules-left *, .modules-center *, .modules-right * {
+	background: none;
+}
+ 
+
+.modules-left * {
+	margin-right: 10px;
+}
+
+.modules-left:first-child {
+	margin-left: 10px;
+}
+
+.modules-right:last-child {
+	margin-right: 20px;
+}
+
+.modules-right * {
+	margin-left: 10px;
+}
+
+/*
+	Stolen from:
+	https://github.com/Alexays/Waybar/issues/123#issuecomment-447919090
+
+*/
+
+window#waybar {
+   background: transparent;
+}
+
+window > box {
+	margin: 10px 20px 0 20px;
+	padding: 0 0 5px 0;
+  
+	border-bottom: 1px solid #f8f8f2;
+}
+
