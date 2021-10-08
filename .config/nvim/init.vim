@@ -10,10 +10,16 @@ call plug#begin(stdpath('data') . '/plugged')
 	Plug 'mhinz/vim-startify' 
 	Plug 'ryanoasis/vim-devicons'
 	Plug 'vimlab/split-term.vim'
+	Plug 'blankname/vim-fish'
 
 source ~/.config/nvim/coc.nvim.vim
 
 set guifont=DroidSansMono\ Nerd\ Font\ 11
+
+if &shell =~# 'fish$'
+    set shell=sh
+endif
+
 
 nnoremap <C-S-`> :Term<CR>
 " Read ~/.NERDTreeBookmarks file and takes its second column
