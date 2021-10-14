@@ -1,0 +1,3 @@
+[submodule "upstream-configs/dracula-i3"]
+	path = upstream-configs/dracula-i3
+	url = https://github.com/dracula/i3.git
