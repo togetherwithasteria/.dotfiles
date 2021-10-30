@@ -15,10 +15,24 @@ set $up k
 set $right l
 # Your preferred terminal emulator
 set $term kitty
-# Your preferred application launcher
-# Note: pass the final command to swaymsg so that the resulting window can be opened
-# on the original workspace that the command was run on.
-set $menu dmenu_path | wofi --show drun -i | xargs swaymsg exec --
+
+#
+# Set some apps as floating. Good for screenshot tools original
+#
+# Credits: https://wiki.archlinux.org/title/Sway#Floating_windows
+#
+
+for_window [app_id="zenity"] floating enable
+# for_window [app_id="org.kde.plasma.emojier"] floating enable
+
+#
+# For floating windows support for multiple monitors. I don't use this but uncomment this should you have multiple monitors.
+# 
+#
+
+#
+# swaymsg move position center; swaymsg resize set 80ppt 80ppt
+#
 
 #
 # Clipman
