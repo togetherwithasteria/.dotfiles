@@ -36,6 +36,18 @@ bindsym $mod+c+Delete+a clipman clear --all
 
 exec clipman restore
 
+#
+# Use wayland-screenshot for screenshotting. 
+#
+
+bindsym Ctrl+Alt+Delete exec wayland-screenshot 
+
+#
+# Use KDE's Emoji Selector app for selecting emojis.
+#
+
+# bindsym $mod+. exec ibus-ui-emojier-plasma
+
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
