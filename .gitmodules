@@ -1,3 +1,7 @@
 [submodule ".config/sway/dracula"]
 	path = .config/sway/dracula
 	url = https://github.com/Nefoplayground/i3	
+
+[submodule ".config/rofi/dracula"]
+	path = .config/rofi/dracula
+        url = https://github.com/dracula/rofi                       

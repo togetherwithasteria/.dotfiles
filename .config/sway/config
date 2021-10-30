@@ -28,9 +28,9 @@ exec wl-paste -t text --watch clipman store --no-persist  1>> ~/.local/share/cli
 
 exec wl-paste -p -t text --watch clipman store --no-persist  -P --histpath="~/.local/share/clipman-primary.json"
 
-bindsym $mod+c+h exec clipman pick -t wofi
+bindsym $mod+c+h exec clipman pick -t rofi
 
-bindsym $mod+c+Delete exec clipman clear -t wofi
+bindsym $mod+c+Delete exec clipman clear -t rofi
 
 bindsym $mod+c+Delete+a clipman clear --all
 
@@ -281,3 +281,8 @@ exec swayidle -w \
 #
 
 include dracula.conf
+
+ # Your preferred application launcher
+ # Note: pass the final command to swaymsg so that the resulting windo    w can be opened
+ # on the original workspace that the command was run on.
+ set $menu dmenu_path | rofi -show drun | xargs swaymsg exec --
