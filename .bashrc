@@ -8,7 +8,7 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
-export EDITOR="hx"
+export EDITOR="nvim"
 export LANG="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
 export NVM_DIR="$HOME/.nvm"
