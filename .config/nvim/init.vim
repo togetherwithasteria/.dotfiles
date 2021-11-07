@@ -11,6 +11,8 @@ call plug#begin(stdpath('data') . '/plugged')
 	Plug 'ryanoasis/vim-devicons'
 	Plug 'vimlab/split-term.vim'
 	Plug 'blankname/vim-fish'
+	Plug 'vim-airline/vim-airline'
+	Plug 'vim-airline/vim-airline-themes'
 
 source ~/.config/nvim/coc.nvim.vim
 
@@ -20,7 +22,7 @@ if &shell =~# 'fish$'
     set shell=sh
 endif
 
-
+let g:airline_theme='ayu_mirage'
 nnoremap <C-S-`> :Term<CR>
 " Read ~/.NERDTreeBookmarks file and takes its second column
 function! s:nerdtreeBookmarks()
