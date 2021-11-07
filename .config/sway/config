@@ -57,10 +57,18 @@ exec clipman restore
 bindsym Ctrl+Alt+Delete exec wayland-screenshot 
 
 #
-# Use KDE's Emoji Selector app for selecting emojis.
+# Emoji picker
 #
 
+#
+# KDE Plasma:
 # bindsym $mod+. exec ibus-ui-emojier-plasma
+#
+
+#
+# Rofimoji:
+
+bindsym $mod+period exec rofimoji --action clipboard
 
 ### Output configuration
 #
