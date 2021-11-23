@@ -17,6 +17,13 @@ set $right l
 set $term kitty
 
 #
+# Bitwarden Rofi
+# 
+
+
+bindsym $mod+b+v exec bwmenu
+
+#
 # Set some apps as floating. Good for screenshot tools original
 #
 # Credits: https://wiki.archlinux.org/title/Sway#Floating_windows
