@@ -80,7 +80,7 @@ bindsym $mod+period exec rofimoji --action clipboard
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/Wallpapers/918435.jpg fill
+output * bg ~/Wallpapers/93544315_p0.jpg fill
 #
 # Example configuration:
 #
